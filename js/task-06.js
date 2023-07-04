@@ -8,6 +8,6 @@ function onInputBlur(event) {
   inputRef.classList.add("valid");
 
   event.currentTarget.value.length === Number(validLengthRef.dataset.length)
-    ? inputRef.classList.add("valid")
-    : inputRef.classList.add("invalid");
+    ? inputRef.classList.remove("invalid")
+    : inputRef.classList.remove("valid");
 }
