@@ -7,11 +7,11 @@ function updateCounter() {
     valueElement.textContent = counterValue;
 }
 decrementButton.addEventListener('click', function() {
-    counterValue-=
+    counterValue-=1
     updateCounter();
 });
 incrementButton.addEventListener('click', function() {
-    counterValue+=
+    counterValue+=1
     updateCounter();
 });
 updateCounter();
